@@ -14,13 +14,13 @@ app.get('/location/:id', (req, res) => {
     axios(config)
     .then(function (response) {
         //console.log(JSON.stringify(response.data));
-        console.log(response.data.latitude);
+        console.log(response.data);
     })
     .catch(function (error) {
         console.log(error);
     });
     var id = req.params.id;
-    console.log(id);
+    //console.log(id);
     res.send('Thanks for reporting to us this location!');
 })
 
